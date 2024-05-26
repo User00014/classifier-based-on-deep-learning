@@ -28,7 +28,7 @@ def custom_train_test_split(X, y, test_size=0.2, random_state=None):
 
 
 
-filepath = r"C:\Users\13488\Desktop\大数据实验\基于机器学习的客户信用评估\代码\data\default of credit card clients.xls"
+filepath = r".\default of credit card clients.xls"
 data0 = pd.read_excel(filepath, index_col=False)#换成自己电脑中文件保存的路径
 df=pd.DataFrame(data0)
 x=df.iloc[:,1:-1]#取出特征数据
